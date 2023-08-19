@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header-container {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+
+    .div-container {
+
+        border: 1px solid black;
+        width: 300px;
+    }
+
+    .img-div {
+        padding: 10px 40px;
+    }
+
+    .btn-item {
+        color: white;
+        background-color: blue;
+        padding: 15px 25px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+
+    }
+
+    .btn-perent {
+        text-align: center;
+    }
+
+    .child-p {
+        text-align: center;
+
+    }
+
+    .child-h1 {
+        text-align: center;
+    }
+    .extra-container{
+        width: 200px;
+    }
+ 
+        
+</style>
+
+<body>
+    <header class="header-container">
+        <div class="div-container">
+            <div class="img-div">
+                <img src="./images/pentagon.png" alt="">
+            </div>
+            <h3 class="child-h1">rose</h3>
+            <p class="child-p">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Minus, dolores.</p>
+            <h1 id="price" class="child-h1">price 50 $</h1>
+            <div class="btn-perent"> <button onclick="handleClick(this)" class="btn-item">ADD To card</button></div>
+        </div>
+        <div class="div-container">
+            <div class="img-div">
+                <img src="./images/rhombus.png" alt="">
+            </div>
+            <h3 class="child-h1">apple</h3>
+            <p class="child-p">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Minus, dolores.</p>
+            <h1 class="child-h1">price 60 $</h1>
+            <div class="btn-perent"> <button onclick="handleClick(this)" class="btn-item">ADD To card</button></div>
+        </div>
+        <div class="div-container">
+            <div class="img-div">
+                <img src="./images/triangle.png" alt="">
+            </div>
+            <h3 class="child-h1">orange</h3>
+            <p class="child-p">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Minus, dolores.</p>
+            <h1 class="child-h1">price 100 $</h1>
+            <div class="btn-perent"> <button onclick="handleClick(this)" class="btn-item">ADD To card</button></div>
+        </div>
+        <div class="extra-container">
+            <h1>code:Hero</h1>
+
+            <div class="selacted-item" id="selacted-item">
+
+            </div>
+
+            <h1>total:<span id="total">00</span></h1>
+            <h1> Discounts:<span>00</span></h1>
+            <h1>grand Total:<span>00</span></h1>
+        </div>
+    </header>
+    <script src="dom.js"></script>
+</body>
+
+</html>
